@@ -1,0 +1,234 @@
+$icon-font-path: '/assets/fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/components-font-awesome/scss/font-awesome.scss";
+@import "bower_components/sass-material-colors/sass/_sass-material-colors.scss";
+// endbower
+
+//MIXINS
+@import "mixins/_hamburger.scss";
+@import "mixins/_sticky-footer.scss";
+
+//PAGES
+@import "../../sections/header/_header.scss";
+@import "../../sections/footer/_footer.scss";
+@import "../../sections/hadas/home/_home.scss";
+@import "../../sections/hadas/cumpleaños/_cumpleaños.scss";
+@import "../../sections/hadas/talleres/_talleres.scss";
+@import "../../sections/hadas/noticias/_noticias.scss";
+@import "../../sections/hadas/nosotros/_nosotros.scss";
+@import "../../sections/hadas/cafeteria/_cafeteria.scss";
+@import "../../sections/hadas/galeria/_galeria.scss";
+@import "../../sections/hadas/comuniones/_comuniones.scss";
+@import "../../sections/hadas/privacidad/_privacidad.scss";
+@import "../../sections/hadas/legal/_legal.scss";
+
+//FONTS
+@font-face {
+  	font-family: 'Museo-500';
+        src: url('../fonts/Museo500-Regular.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+
+
+.sliderInicio .slide{
+    height: 100%;
+}
+.owl-carousel, .owl-carousel .owl-stage-outer, .owl-carousel .owl-stage-outer .owl-stage, .owl-carousel .owl-stage-outer .owl-stage .owl-item{
+    height: 100%;
+    width: 100%;
+}
+.owl-dots{
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+}
+.owl-dots .owl-dot{
+    display: inline-block;
+}
+.owl-dots .owl-dot.active span{
+    background: none repeat scroll 0 0 #005DAB;
+}
+.owl-dots .owl-dot span{
+    background: none repeat scroll 0 0 transparent;
+    border-radius: 100%;
+    border: 1px solid #005DAB;
+    display: block;
+    height: 1em;
+    margin: .5em .3em;
+    opacity: 0.5;
+    width: 1em;
+}
+.owl-dots-menu{
+    position: absolute;
+    bottom: 22%;
+    left: 46%;
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: block;
+    height: .5em;   
+    width: .5em;
+}
+
+.owl-nav{
+  color: #F19BCC;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;/*IE7 life-saver */
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.owl-prev {
+  position: absolute;
+  top: 40%;
+  left: -30px;
+}
+.owl-next {
+  position: absolute;
+  top: 40%;
+  right: 20px;
+}
+
+
+#carousel{
+  img{
+    max-width: 90%;
+    height: 90%;
+  }
+}
+
+#logoHada, #logoDuende{
+	margin-top: 10px;
+  cursor: pointer;
+}
+
+.logoPeque{
+	float: right;
+	margin-top: 105px !important;
+	width: 130px;
+}
+
+.container{
+	padding: 0;
+}
+
+.container-hadas{
+	background-color: #FDE4E7;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+a, a:hover, a:focus, a:active{
+	text-decoration: none;
+  outline: none;
+  color: #EC407A;
+}
+
+li{
+	list-style-type: none;
+}
+
+#wrapper{
+	font-family: 'Museo-500';
+	width: 100%;
+	background: #fe9090 url("../images/hadas/background.jpg") repeat fixed;
+	color: #5a5a5a;
+	font-size: 14px;
+	font-weight: 300;
+	overflow: hidden;
+	line-height: 1.75;
+}
+
+.wrapper-duende{
+  background-color: #FFF2A9 !important;
+  nav{
+    background: linear-gradient(to top, #3EC1C1 0%,#11B48A 0%,#00945E 100%);
+    border-color: #08A579 !important;
+    ul{
+      li{
+        a{
+          &:hover{
+            color: #FFF2A9;
+          }
+          &:focus{
+            color: #FFF2A9;
+          }
+        }
+      }
+    }
+  }
+  .container-hadas{
+    background-color: #FFF2A9;
+  }
+  .titulo-principal{
+      color: #00955F;
+      text-align: center;
+      &:hover{
+        color: #00955F;
+      }
+  }
+  .titulo-secundario{
+      color: #08A579;
+  }
+  .btn-hadas{
+      background-color: #0DAD80;
+      border-color: #00955F;
+      &:hover{
+          background-color: #00955F;
+          border-color: #00955F;
+      }
+  }
+  a, a:hover, a:focus, a:active{
+    color: #0DAD80;
+  }
+}
+
+.info{
+	padding: 30px;
+}
+
+.titulo-principal{
+	font-weight: bold;
+  	color: #EC407A;
+  	text-align: center;
+  	padding-bottom: 20px;
+  	&:hover{
+  		color: #EC407A;
+  	}
+}
+
+.titulo-secundario{
+	font-weight: bold;
+  	color: #F06292;
+  	text-align: center;
+  	padding-bottom: 10px;
+}
+
+.btn-hadas{
+	background-color: #F06292;
+	border-color: #EC407A;
+	&:hover{
+  		background-color: #EC407A;
+		border-color: #EC407A;
+  	}
+}
+
+.img-principal{
+	img{
+		width: 100%;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+		padding: 0px;
+		margin: 0px;
+	}
+}
+
+.barra{
+	border-right: 1px solid #999;
+}

@@ -1,0 +1,16 @@
+#footer{
+	position: relative;
+	a{
+		color: #EC407A;
+		font-weight: 600;
+	}
+}
+
+.footer-duende{
+	a{
+		color: #019660 !important;
+		font-weight: 600;
+	}
+}
+
+@include sticky-footer(100px);

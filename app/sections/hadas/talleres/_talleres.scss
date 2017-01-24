@@ -1,0 +1,21 @@
+.talleres-hadas{
+	.seccion-taller{
+		padding: 20px;
+		.texto-taller{
+			text-align: justify;
+		}
+		#carousel{
+			margin-top: 15px;
+			margin-left: 35px;
+		}
+	}
+	.seccion-bolas{
+		text-align: center;
+	}
+	.sliderPar{
+		padding-top: 30px;
+		img{
+			border-radius: 8px;
+		}
+	}
+}

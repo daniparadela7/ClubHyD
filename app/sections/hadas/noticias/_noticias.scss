@@ -1,0 +1,23 @@
+.noticias-hadas{
+	.section-noticia{
+		padding: 25px;
+		img{
+			max-width: 180px;
+			padding-top: 20px;
+		}
+		.titulo-noticia{
+			h3{
+				text-align: left;
+			}
+		}
+		.descripcion-noticia{
+			text-align: justify;
+		}
+		i{
+			padding-right: 7px;
+		}
+		.fecha{
+			padding-bottom: 20px;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.nosotros-hadas{
+	.section-nosotros{
+		text-align: justify;
+		.right{
+			float: right;
+		}
+		.texto-nosotros{
+			padding: 20px 20px;
+			height: 375px;
+			display: table; 
+			overflow: hidden;
+			.center-nosotros{
+				display: table-cell; vertical-align: middle;
+			}
+		}
+		.img-somos{
+			max-width: 585px;
+			height: 375px;
+		}
+		.sin-padding-izq{
+			padding-left: 0;
+		}
+		.sin-padding-der{
+			padding-right: 0;
+		}
+	}
+}
