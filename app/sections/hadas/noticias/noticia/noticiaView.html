@@ -9,9 +9,9 @@
 				<h2 class="titulo-principal">{{noticia.titulo}}</h2>
 			</div>
 			<div class="section-noticia col-md-offset-1 col-md-10">
-				<img ng-src="{{'data:' + noticia.imagen[0].filetype + ';base64,' + noticia.imagen[0].base64}}" class="profile-image img-circle">
+				<img class="imagen-expandida" ng-src="{{'data:' + noticia.imagen[0].filetype + ';base64,' + noticia.imagen[0].base64}}" class="profile-image">
 				<div class="col-md-12">
-					<p class="text-right fecha"><i class="fa fa-calendar"></i>{{fecha_noticiaFormato}}</p>
+					<p class="text-left fecha"><i class="fa fa-calendar"></i>{{fecha_noticiaFormato}}</p>
 					<div class="descripcion-noticia">
 						<p ng-bind-html="noticia.contenido"></p>
 					</div>

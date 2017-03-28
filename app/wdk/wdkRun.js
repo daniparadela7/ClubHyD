@@ -30,16 +30,18 @@ angular.module('app')
 		if(ruta.includes('duendes')){
 			$('#wrapper').addClass('wrapper-duende');
 			$('#footer-wrapper').addClass('footer-duende');
-			$('#logoHada').addClass('logoPeque');
-			$('#logoDuende').removeClass('logoPeque');
+			$('#logoHada').addClass('logoDerecha');
+			$('#logoDuende').removeClass('logoDerecha');
 			$('#wrapper').css('background', 'transparent');
+			$('.headerBG').addClass('headerBG-duendes');
 			$rootScope.ruta = 'duendes';
 		}
 		else{
 			$('#wrapper').removeClass('wrapper-duende');
 			$('#footer-wrapper').removeClass('footer-duende');
-			$('#logoDuende').addClass('logoPeque');
-			$('#logoHada').removeClass('logoPeque');
+			$('#logoDuende').addClass('logoDerecha');
+			$('#logoHada').removeClass('logoDerecha');
+			$('.headerBG').removeClass('headerBG-duendes');
 			$rootScope.ruta = 'hadas';
 		}
 	}
@@ -49,6 +51,7 @@ angular.module('app')
 		$rootScope.hadasODuendes();
 	});
 	$rootScope.$on('$routeChangeSuccess', function(){
+		$rootScope.visibleMenu = false;
 		NProgress.done();
 		wdkFunctions.init();
 		$rootScope.hadasODuendes();

@@ -41,9 +41,14 @@
     <div id="wrapper">
         <div id="container">
             <div class="container">
-                <div class="logos" ng-controller="HeaderController">
-                    <a ng-click="hadas()"><img id="logoHada" alt="logo" src="/assets/images/hadas/logo.png"></a>
-                    <a ng-click="duendes()"><img id="logoDuende" alt="logo" src="/assets/images/duendes/logo.png"></a>
+                <div class="logos hidden-xs" ng-controller="HeaderController">
+                    <a class="col-md-4" ng-click="hadas()"><img id="logoHada" alt="logo" src="/assets/images/hadas/logo.png"></a>
+                    <div class="col-md-4 contactoHome">
+                        <p>Contacto:</p>
+                        <p><i class="fa fa-phone"></i>971 28 81 88</p>
+                        <p><i class="fa fa-mobile"></i>627 01 00 02</p>
+                    </div>
+                    <a class="col-md-4" ng-click="duendes()"><img id="logoDuende" alt="logo" src="/assets/images/duendes/logo.png"></a>
                 </div>
                 <nav class="navbar navbar-default" role="navigation" ng-include="'sections/header/headerView.html'" ng-controller="HeaderController"></nav>
             </div>
@@ -148,13 +153,6 @@
     <script src="/sections/duendes/cumpleaños/cumpleañosConfig.js"></script>
     <script src="/sections/duendes/parque/parqueConfig.js"></script>
     <script src="/sections/duendes/parque/parqueController.js"></script>
-    <script src="/sections/duendes/comuniones/comunionesConfig.js"></script>
-    <script src="/sections/duendes/noticias/noticiasConfig.js"></script>
-    <script src="/sections/duendes/nosotros/nosotrosConfig.js"></script>
-    <script src="/sections/duendes/galeria/galeriaConfig.js"></script>
-    <script src="/sections/duendes/cafeteria/cafeteriaConfig.js"></script>
-    <script src="/sections/duendes/legal/legalConfig.js"></script>
-    <script src="/sections/duendes/privacidad/privacidadConfig.js"></script>
     
     <!-- endbuild -->    
   </body>

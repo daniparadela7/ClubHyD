@@ -1,5 +1,14 @@
 .comuniones-hadas{
 	.seccion-comunion{
+		@media screen and (max-width: 991px){
+			padding: 20px 15px;
+			text-align: center;
+		}
 		padding: 20px 0;
+	}
+	.menu-seccion{
+		@media screen and (max-width: 991px){
+			padding: 15px 0;
+		}
 	}
 }

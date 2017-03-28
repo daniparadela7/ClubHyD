@@ -3,10 +3,33 @@
 		text-align: justify;
 		padding-bottom: 20px;
 	}
+	.seccion-bolas{
+		padding-top: 20px;
+	}
 	.sliderCafe{
+		@media screen and (max-width: 991px){
+			padding-top: 30px;
+		}
 		padding-top: 30px;
 		img{
 			border-radius: 8px;
+		}
+		.owl-nav{
+			display: none;
+		}
+	}
+	.sliderPar{
+		@media screen and (max-width: 991px){
+			padding-top: 30px;
+		}
+		padding-top: 30px;
+		.owl-nav{
+			display: none;
+		}
+	}
+	.menu-seccion{
+		@media screen and (max-width: 991px){
+			padding: 15px 0;
 		}
 	}
 }

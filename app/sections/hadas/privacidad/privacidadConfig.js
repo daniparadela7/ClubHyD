@@ -16,5 +16,20 @@ angular.module('app')
                 }, 500);
             }
 		}
+	})
+	.when('/duendes/privacidad', {
+		controller: 'PrivacidadController',
+		templateUrl: 'sections/hadas/privacidad/privacidadView.html',
+		meta: {
+	    	'title': 'Privacidad | El Club de los Duendes',
+	    	'description': 'Aquí encontrarás toda las información relacionada con la privacidad de la web El Club de las Hadas y Duendes.'
+	    },
+		resolve: {
+			delayForTransitions: function($timeout) {
+                return $timeout(function(){
+                    return true;
+                }, 500);
+            }
+		}
 	});
 }]);

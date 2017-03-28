@@ -8,20 +8,21 @@
 			<div class="col-md-12 section-cumple">
 				<h2 class="titulo-principal">Noticias y novedades</h2>
 			</div>
-			<div ng-repeat="noticia in noticias" class="section-noticia col-md-offset-1 col-md-10">
-				<div class="col-md-12 titulo-noticia">
-					<a href="/{{ruta}}/noticias/{{noticia.pretty_url}}"><h3 class="titulo-secundario">{{noticia.titulo}}</h3></a>
-				</div>
-				<div class="col-md-3">
-					<img ng-src="{{'data:' + noticia.imagen[0].filetype + ';base64,' + noticia.imagen[0].base64}}" class="profile-image img-circle">
-				</div>
-				<div class="col-md-9">
-					<p class="text-right"><i class="fa fa-calendar"></i>{{noticia.fecha_noticiaFormato}}</p>
-					<div class="descripcion-noticia">
-						<p ng-bind-html="noticia.extracto"></p>
-						<a href="/{{ruta}}/noticias/{{noticia.pretty_url}}"><p> [...]</p></a>
+			<div ng-repeat="noticia in noticias" class="section-noticia col-md-4">
+				<a href="/{{ruta}}/noticias/{{noticia.pretty_url}}">
+					<div class="imagen-noticia" style="background-image:url('{{'data:' + noticia.imagen[0].filetype + ';base64,' + noticia.imagen[0].base64}}');background-position: 50% 50%; background-size: cover;">
 					</div>
-				</div>
+					<div class="titulo-noticia">
+						<h3 class="col-md-9 col-xs-8 titulo-secundario">{{noticia.titulo}}</h3>
+						<p class="col-md-3 col-xs-4 fecha-noticia"><i class="fa fa-calendar"></i>{{noticia.fecha_noticiaFormato}}</p>
+					</div><!--
+					<div class="col-md-12">
+						<div class="descripcion-noticia">
+							<p ng-bind-html="noticia.extracto"></p>
+							<a href="/{{ruta}}/noticias/{{noticia.pretty_url}}"><p> [...]</p></a>
+						</div>
+					</div>-->
+				</a>
 			</div>	
 		</div>
 	</section>

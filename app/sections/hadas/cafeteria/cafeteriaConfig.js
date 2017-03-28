@@ -19,5 +19,23 @@ angular.module('app')
                 }, 500);
             }
 		}
+	})
+	.when('/duendes/cafeteria', {
+		controller: 'CafeteriaController',
+		templateUrl: 'sections/hadas/cafeteria/cafeteriaView.html',
+		meta: {
+	    	'title': 'Cafeteria | El Club de los Duendes',
+	    	'description': 'Aquí encontrarás toda las información relacionada con El Club de los Duendes de Palma de Mallorca. Horarios, cartas...'
+	    },
+		resolve: {
+			cafeteria: function(apiService) {
+			    return apiService.getNodes('cafeteria');
+			},
+			delayForTransitions: function($timeout) {
+                return $timeout(function(){
+                    return true;
+                }, 500);
+            }
+		}
 	});
 }]);

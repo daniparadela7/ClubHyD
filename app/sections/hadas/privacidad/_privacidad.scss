@@ -1,5 +1,8 @@
 .cumpleaños-hadas{
 	.section-cumple{
+		@media screen and (max-width: 991px){
+			padding: 20px 15px;
+		}
 		padding: 20px 0;
 	}
 }

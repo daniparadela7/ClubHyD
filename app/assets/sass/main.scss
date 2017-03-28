@@ -90,8 +90,14 @@ $icon-font-path: '/assets/fonts/';
   position: absolute;
   top: 40%;
   left: -30px;
+  @media screen and (max-width: 991px){
+    left: -19px;
+  }
 }
 .owl-next {
+  @media screen and (max-width: 991px){
+    right: -16px;
+  }
   position: absolute;
   top: 40%;
   right: 20px;
@@ -102,7 +108,14 @@ $icon-font-path: '/assets/fonts/';
   img{
     max-width: 90%;
     height: 90%;
+    @media screen and (max-width: 991px){
+      margin: 0 auto;
+    }
   }
+}
+
+.logos{
+  height: 189px;
 }
 
 #logoHada, #logoDuende{
@@ -110,10 +123,17 @@ $icon-font-path: '/assets/fonts/';
   cursor: pointer;
 }
 
-.logoPeque{
-	float: right;
-	margin-top: 105px !important;
-	width: 130px;
+.contactoHome{
+  text-align: center;
+  padding: 45px;
+  font-size: 15px;
+  i{
+    margin-right: 7px;
+  }
+}
+
+.sin-padding{
+  padding: 0;
 }
 
 .container{
@@ -192,23 +212,29 @@ li{
 
 .info{
 	padding: 30px;
+  @media screen and (max-width: 991px){
+    padding: 30px 15px;
+  }
 }
 
 .titulo-principal{
+  @media screen and (max-width: 991px){
+    padding-bottom: 0;
+  }
 	font-weight: bold;
+  color: #EC407A;
+  text-align: center;
+  padding-bottom: 20px;
+  &:hover{
   	color: #EC407A;
-  	text-align: center;
-  	padding-bottom: 20px;
-  	&:hover{
-  		color: #EC407A;
-  	}
+  }
 }
 
 .titulo-secundario{
 	font-weight: bold;
-  	color: #F06292;
-  	text-align: center;
-  	padding-bottom: 10px;
+  color: #F06292;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .btn-hadas{
@@ -221,6 +247,9 @@ li{
 }
 
 .img-principal{
+  @media screen and (max-width: 991px){
+    display: none;
+  }
 	img{
 		width: 100%;
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
@@ -230,5 +259,8 @@ li{
 }
 
 .barra{
+  @media screen and (max-width: 991px){
+    border: 0;
+  }
 	border-right: 1px solid #999;
 }
