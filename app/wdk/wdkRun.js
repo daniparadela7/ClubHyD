@@ -52,6 +52,7 @@ angular.module('app')
 	});
 	$rootScope.$on('$routeChangeSuccess', function(){
 		$rootScope.visibleMenu = false;
+    $('body, html').removeClass('menu-mobile-in');
 		NProgress.done();
 		wdkFunctions.init();
 		$rootScope.hadasODuendes();
