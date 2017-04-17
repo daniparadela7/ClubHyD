@@ -3,8 +3,7 @@
 		margin-top: 0;
 		margin-bottom: 0;
 		height: 75px;
-	}
-	position: relative;
+		position: relative;
     left: 0px;
     z-index: 999 !important;
     width: 100%;
@@ -12,10 +11,11 @@
     border-top: 1px solid !important;
     border-color: #F06292 !important;
     border-radius: 0 !important;
-	margin: 0px;
-	background: linear-gradient(to bottom, #F8BBD0 0%,#F48FB1 0%,#F06292 100%);
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-	font-family: 'Museo-500';
+		margin: 0px;
+		background: linear-gradient(to bottom, #F8BBD0 0%,#F48FB1 0%,#F06292 100%);
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+		font-family: 'Museo-500';
+	}
 
 	.texto-movil{
 		padding-top: 5px;
