@@ -3,7 +3,6 @@ angular.module('app')
 .controller('CafeteriaController', ['$scope', '$timeout', 'cafeteria', function($scope, $timeout, cafeteria){
 
 	$scope.img_cafeteria = cafeteria;
-	console.log($scope.img_cafeteria)
 
 	$timeout(function(){
 
@@ -35,6 +34,6 @@ angular.module('app')
 				}
 			}
 		});
-		
+
 	}, 500);
 }]);
