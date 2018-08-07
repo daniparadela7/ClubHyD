@@ -3,10 +3,9 @@ angular.module('app')
 .controller('ParqueController', ['$scope', '$timeout', function($scope, $timeout){
 
 	$scope.img_parque = ['../../../assets/images/duendes/bolas/bolas1.jpg',
-						 '../../../assets/images/duendes/bolas/bolas2.jpg',
-						 '../../../assets/images/duendes/bolas/futbol.jpg',
-						 '../../../assets/images/duendes/bolas/pantallapequena.jpg'];
-	console.log($scope.img_parque)
+						'../../../assets/images/duendes/bolas/bolas2.jpg',
+						'../../../assets/images/duendes/bolas/futbol.jpg',
+						'../../../assets/images/duendes/bolas/pantallapequena.jpg'];
 
 	$timeout(function(){
 
@@ -38,6 +37,6 @@ angular.module('app')
 				}
 			}
 		});
-		
+
 	}, 500);
 }]);
