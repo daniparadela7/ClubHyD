@@ -6,9 +6,9 @@ angular.module('app')
 		controller: 'PrivacidadController',
 		templateUrl: 'sections/hadas/privacidad/privacidadView.html',
 		meta: {
-	    	'title': 'Privacidad | El Club de las Hadas',
-	    	'description': 'Aquí encontrarás toda las información relacionada con la privacidad de la web El Club de las Hadas.'
-	    },
+      'title': 'Privacidad | El Club de las Hadas',
+      'description': 'Aquí encontrarás toda las información relacionada con la privacidad de la web El Club de las Hadas.'
+    },
 		resolve: {
 			delayForTransitions: function($timeout) {
                 return $timeout(function(){
@@ -21,9 +21,9 @@ angular.module('app')
 		controller: 'PrivacidadController',
 		templateUrl: 'sections/hadas/privacidad/privacidadView.html',
 		meta: {
-	    	'title': 'Privacidad | El Club de los Duendes',
-	    	'description': 'Aquí encontrarás toda las información relacionada con la privacidad de la web El Club de las Hadas y Duendes.'
-	    },
+      'title': 'Privacidad | El Club de los Duendes',
+      'description': 'Aquí encontrarás toda las información relacionada con la privacidad de la web El Club de las Hadas y Duendes.'
+    },
 		resolve: {
 			delayForTransitions: function($timeout) {
                 return $timeout(function(){
