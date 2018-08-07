@@ -6,12 +6,12 @@ angular.module('app')
 		controller: 'NosotrosController',
 		templateUrl: 'sections/hadas/nosotros/nosotrosView.html',
 		meta: {
-	    	'title': 'Nosotros | El Club de las Hadas',
-	    	'description': 'Aquí encontrarás información del personal El Club de las Hadas de Palma de Mallorca.'
-	    },
+      'title': 'Nosotros | El Club de las Hadas',
+      'description': 'Aquí encontrarás información del personal El Club de las Hadas de Palma de Mallorca.'
+    },
 		resolve: {
 			nosotros: function(apiService) {
-			    return apiService.getNodes('nosotros');
+        return apiService.getNodes('nosotros');
 			},
 			delayForTransitions: function($timeout) {
                 return $timeout(function(){
@@ -24,12 +24,12 @@ angular.module('app')
 		controller: 'NosotrosController',
 		templateUrl: 'sections/hadas/nosotros/nosotrosView.html',
 		meta: {
-	    	'title': 'Nosotros | El Club de los Duendes',
-	    	'description': 'Aquí encontrarás información del personal El Club de los Duendes de Palma de Mallorca.'
-	    },
+      'title': 'Nosotros | El Club de los Duendes',
+      'description': 'Aquí encontrarás información del personal El Club de los Duendes de Palma de Mallorca.'
+    },
 		resolve: {
 			nosotros: function(apiService) {
-			    return apiService.getNodes('nosotros');
+        return apiService.getNodes('nosotros');
 			},
 			delayForTransitions: function($timeout) {
                 return $timeout(function(){
