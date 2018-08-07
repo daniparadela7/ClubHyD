@@ -6,12 +6,12 @@ angular.module('app')
 		controller: 'NoticiasController',
 		templateUrl: 'sections/hadas/noticias/noticiasView.html',
 		meta: {
-	    	'title': 'Noticias | El Club de las Hadas',
-	    	'description': 'Aquí encontrarás todas las noticias relacionadas con El Club de las Hadas de Palma de Mallorca.'
-	    },
+      'title': 'Noticias | El Club de las Hadas',
+      'description': 'Aquí encontrarás todas las noticias relacionadas con El Club de las Hadas de Palma de Mallorca.'
+    },
 		resolve: {
 			noticias: function(apiService) {
-			    return apiService.getNodes('noticias');
+        return apiService.getNodes('noticias');
 			},
 			delayForTransitions: function($timeout) {
                 return $timeout(function(){
@@ -24,12 +24,12 @@ angular.module('app')
 		controller: 'NoticiaController',
 		templateUrl: 'sections/hadas/noticias/noticia/noticiaView.html',
 		meta: {
-	    	'title': 'Noticias | El Club de las Hadas',
-	    	'description': 'Aquí encontrarás todas las noticias relacionadas con El Club de las Hadas de Palma de Mallorca.'
-	    },
+      'title': 'Noticias | El Club de las Hadas',
+      'description': 'Aquí encontrarás todas las noticias relacionadas con El Club de las Hadas de Palma de Mallorca.'
+    },
 		resolve: {
 			noticia: function(apiService, $route) {
-			    return apiService.getNode('noticialink', $route.current.params.pretty);
+        return apiService.getNode('noticialink', $route.current.params.pretty);
 			},
 			delayForTransitions: function($timeout) {
                 return $timeout(function(){
@@ -42,12 +42,12 @@ angular.module('app')
 		controller: 'NoticiasController',
 		templateUrl: 'sections/hadas/noticias/noticiasView.html',
 		meta: {
-	    	'title': 'Noticias | El Club de los Duendes',
-	    	'description': 'Aquí encontrarás todas las noticias relacionadas con El Club de los Duendes de Palma de Mallorca.'
-	    },
+      'title': 'Noticias | El Club de los Duendes',
+      'description': 'Aquí encontrarás todas las noticias relacionadas con El Club de los Duendes de Palma de Mallorca.'
+    },
 		resolve: {
 			noticias: function(apiService) {
-			    return apiService.getNodes('noticias');
+        return apiService.getNodes('noticias');
 			},
 			delayForTransitions: function($timeout) {
                 return $timeout(function(){
@@ -60,12 +60,12 @@ angular.module('app')
 		controller: 'NoticiaController',
 		templateUrl: 'sections/hadas/noticias/noticia/noticiaView.html',
 		meta: {
-	    	'title': 'Noticias | El Club de los Duendes',
-	    	'description': 'Aquí encontrarás todas las noticias relacionadas con El Club de los Duendes de Palma de Mallorca.'
-	    },
+      'title': 'Noticias | El Club de los Duendes',
+      'description': 'Aquí encontrarás todas las noticias relacionadas con El Club de los Duendes de Palma de Mallorca.'
+    },
 		resolve: {
 			noticia: function(apiService, $route) {
-			    return apiService.getNode('noticialink', $route.current.params.pretty);
+        return apiService.getNode('noticialink', $route.current.params.pretty);
 			},
 			delayForTransitions: function($timeout) {
                 return $timeout(function(){
