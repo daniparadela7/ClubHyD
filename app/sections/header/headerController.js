@@ -3,14 +3,14 @@ angular.module('app')
 .controller('HeaderController', ['$rootScope', '$window', '$scope', '$timeout', function($rootScope, $window, $scope, $timeout){
 
 	$scope.hadas = function(){
-		var url = "http://" + $window.location.host + "/hadas";
+		var url = 'http://" + $window.location.host + "/hadas';
 		$window.location.href = url;
-	}
+	};
 
 	$scope.duendes = function(){
-		var url = "http://" + $window.location.host + "/duendes";
+		var url = 'http://" + $window.location.host + "/duendes';
 		$window.location.href = url;
-	}
+	};
 
 	$timeout(function(){
 		$scope.ruta = $rootScope.ruta;
